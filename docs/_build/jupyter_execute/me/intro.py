@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Jirayus Jiarpakdee
+# # Introductory Overview
 # 
 # He is an Australian Government funded data scientist, an internationally recognised software engineering researcher, an ex-Japanese Government funded scholar, and a final-year Ph.D. student in software analytics at the Faculty of Information and Technology, Monash University, Australia. His research interests include empirical software engineering and mining software repositories (MSR). The goal of his Ph.D is to apply the knowledge of statisical modelling, experimental design, and software engineering to improve the explainability of defect prediction models.
 # 
@@ -33,17 +33,9 @@
 # ```{toctree}
 # :hidden:
 # :titlesonly:
-# :caption: About Me
-# 
-# me/intro.ipynb
-# ```
 # 
 # 
-# ```{toctree}
-# :hidden:
-# :titlesonly:
-# :caption: JirayusJiar Misc
-# 
-# jjmisc/jjmisc.ipynb
+# resume.ipynb
+# scholar.ipynb
 # ```
 # 

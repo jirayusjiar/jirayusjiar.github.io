@@ -1,6 +1,15 @@
 # Table of content
 # Learn more at https://jupyterbook.org/customize/toc.html
 #
-
 - file: intro.ipynb
-- file: jjmisc/jjmisc.ipynb
+
+- part: About Me
+  chapters:
+  - file: me/intro.ipynb
+    sections:
+      - file: me/resume.ipynb
+      - file: me/scholar.ipynb
+
+- part: JirayusJiar Misc
+  chapters:
+  - file: jjmisc/jjmisc.ipynb
