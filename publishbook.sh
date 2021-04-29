@@ -4,4 +4,4 @@
 rm -rf docs/_build
 # re-build a jupyter book and push gh-pages
 jupyter-book build docs/
-ghp-import -n -p -c xai4se.github.io -f docs/_build/html
+ghp-import -n -p -c jirayusjiar.github.io -f docs/_build/html
