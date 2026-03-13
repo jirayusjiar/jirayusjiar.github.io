@@ -1,0 +1,180 @@
+---
+import Minimalist from "../layouts/Minimalist.astro";
+
+const frontmatter = {
+  title: "Jirayus Jiarpakdee | CV",
+  description: "CV for Jirayus Jiarpakdee, Senior Data Scientist in Data and AI at SCB.",
+  pdfLink: "resume.pdf",
+};
+---
+
+<Minimalist frontmatter={frontmatter}>
+  <header class="resume-header">
+    <div class="header-copy">
+      <p class="header-kicker">Curriculum Vitae</p>
+      <h1>Jirayus Jiarpakdee</h1>
+      <p class="header-role">Senior Data Scientist · Data and AI · SCB</p>
+    </div>
+
+    <div class="header-meta">
+      <a href="mailto:jirayus.jiar@gmail.com">jirayus.jiar@gmail.com</a>
+      <a class="download-link pdf-hidden" download href="resume.pdf">Download PDF</a>
+    </div>
+  </header>
+
+  <div class="resume-grid">
+    <aside class="sidebar">
+      <section class="sidebar-section">
+        <h2>Core Expertise</h2>
+        <ul class="sidebar-list">
+          <li>Explainable AI</li>
+          <li>Traditional Machine Learning</li>
+          <li>Statistical Modelling</li>
+          <li>NLP and Chatbot Solutions</li>
+          <li>Empirical Study Design</li>
+          <li>Stakeholder Communication</li>
+        </ul>
+      </section>
+
+      <section class="sidebar-section">
+        <h2>Tools</h2>
+        <ul class="sidebar-list">
+          <li>Python</li>
+          <li>R</li>
+          <li>SQL</li>
+          <li>Shell</li>
+          <li>Data Visualisation</li>
+        </ul>
+      </section>
+
+      <section class="sidebar-section">
+        <h2>Education</h2>
+
+        <div class="education-item">
+          <p class="education-degree">Ph.D. in Information Technology</p>
+          <p class="education-school">Monash University, Australia</p>
+          <p class="education-year">2021</p>
+        </div>
+
+        <div class="education-item">
+          <p class="education-degree">M.Eng. in Information Science and Technology</p>
+          <p class="education-school">Nara Institute of Science and Technology, Japan</p>
+          <p class="education-year">2017</p>
+        </div>
+
+        <div class="education-item">
+          <p class="education-degree">B.Eng. in Computer Engineering</p>
+          <p class="education-school">Kasetsart University, Thailand</p>
+          <p class="education-year">2014</p>
+        </div>
+      </section>
+    </aside>
+
+    <main class="main-column">
+      <section class="main-section">
+        <h2>Profile</h2>
+        <p>
+          Senior data scientist with a PhD from Monash University and hands-on experience
+          delivering explainable AI, traditional machine learning, and applied AI in enterprise
+          banking and healthcare analytics. Brings a strong research foundation together with
+          practical delivery across customer, operational, and text-driven initiatives in
+          regulated environments.
+        </p>
+      </section>
+
+      <section class="main-section">
+        <h2>Experience</h2>
+
+        <article class="experience-item">
+          <div class="experience-head">
+            <div>
+              <h3>Senior Data Scientist</h3>
+              <p class="experience-org"><a href="https://www.scb.co.th/">SCB</a> · Data and AI</p>
+            </div>
+            <p class="experience-period">2025 - Present</p>
+          </div>
+          <ul class="experience-list">
+            <li>Lead data science delivery for business and operational initiatives within SCB.</li>
+            <li>
+              Apply explainable AI, traditional ML, and modern AI methods across marketing, NLP,
+              chatbot, and juristic-related banking use cases.
+            </li>
+            <li>
+              Support production readiness, model communication, and stakeholder alignment for
+              practical enterprise adoption.
+            </li>
+          </ul>
+        </article>
+
+        <article class="experience-item">
+          <div class="experience-head">
+            <div>
+              <h3>Data Scientist</h3>
+              <p class="experience-org"><a href="https://www.scb.co.th/">SCB</a> · Data and AI</p>
+            </div>
+            <p class="experience-period">2021 - 2025</p>
+          </div>
+          <ul class="experience-list">
+            <li>
+              Joined SCB in 2021 and developed machine learning and analytics workflows for
+              enterprise banking applications.
+            </li>
+            <li>
+              Built interpretable modelling approaches and decision-support solutions for
+              cross-functional teams.
+            </li>
+            <li>
+              Partnered with business and technical stakeholders to move analytical work into
+              dependable delivery.
+            </li>
+          </ul>
+        </article>
+
+        <article class="experience-item">
+          <div class="experience-head">
+            <div>
+              <h3>Data Scientist - External Engagement Project</h3>
+              <p class="experience-org">
+                Department of Health, Australian Government · MRFF-funded project
+              </p>
+            </div>
+            <p class="experience-period">2020 - 2021</p>
+          </div>
+          <ul class="experience-list">
+            <li>
+              Built multivariable statistical and machine learning models to predict patient and
+              paramedic wait times across 12 emergency departments.
+            </li>
+            <li>
+              Used administrative triage data to develop and validate emergency medicine prediction
+              models with practical deployment relevance.
+            </li>
+            <li>
+              Contributed to one of the largest studies of its kind in this area, with deployment
+              adopted in participating emergency departments.
+            </li>
+          </ul>
+        </article>
+
+        <article class="experience-item">
+          <div class="experience-head">
+            <div>
+              <h3>Mentor - JITBOT</h3>
+              <p class="experience-org">Monash University · Faculty of IT</p>
+            </div>
+            <p class="experience-period">2019</p>
+          </div>
+          <ul class="experience-list">
+            <li>
+              Mentored research and development work on JITBOT, combining explainable AI, GitHub
+              mining, and software quality assurance.
+            </li>
+            <li>
+              Supported empirical study design and technical delivery using Python and R.
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </div>
+</Minimalist>

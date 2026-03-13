@@ -1,0 +1,30 @@
+{
+  "name": "astro-resume",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "postinstall": "./scripts/with-supported-node.sh npx playwright install chromium",
+    "dev": "./scripts/with-supported-node.sh astro dev",
+    "start": "./scripts/with-supported-node.sh astro dev",
+    "generate-pdf": "./scripts/with-supported-node.sh node ./scripts/generate-pdf.js",
+    "generate-pdf:ci": "./scripts/with-supported-node.sh env PDF_VIEW=true start-server-and-test http://localhost:4321 generate-pdf",
+    "prebuild": "./scripts/with-supported-node.sh astro check && ./scripts/with-supported-node.sh tsc --noEmit",
+    "build": "./scripts/with-supported-node.sh npm run generate-pdf:ci && ./scripts/with-supported-node.sh astro build"
+  },
+  "devDependencies": {
+    "@astrojs/tailwind": "^5.1.4",
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.13.8",
+    "prettier": "^3.5.3",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "start-server-and-test": "^2.0.11",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "astro": "^5.7.10"
+  }
+}

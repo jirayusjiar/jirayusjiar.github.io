@@ -1,0 +1,42 @@
+---
+import "../styles.css";
+
+type Props = {
+  frontmatter: {
+    title: string;
+    pdfLink: string;
+    noIndex?: boolean;
+    description?: string;
+  };
+};
+
+const { PDF_VIEW } = import.meta.env;
+
+const { title, noIndex, description } = Astro.props
+  .frontmatter as Props["frontmatter"];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description || title} />
+    {noIndex && <meta name="robots" content="noindex" />}
+    <title>{title}</title>
+  </head>
+  <body class={PDF_VIEW ? "pdf-view" : "app-shell"}>
+    <div
+      class:list={[
+        "container mx-auto flex justify-center",
+        PDF_VIEW ? "pdf-container" : "px-4 py-4 sm:px-6 sm:py-12",
+      ]}
+    >
+      <article class="minimalist relative">
+        <slot />
+      </article>
+    </div>
+  </body>
+</html>
