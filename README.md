@@ -41,7 +41,7 @@ To use it:
 1. Push the repo to GitHub.
 2. In GitHub, open `Settings -> Pages`.
 3. Set `Source` to `GitHub Actions`.
-4. Push to `main` to trigger deployment.
+4. Push to `master` to trigger deployment.
 
 Because this repository is the root `*.github.io` site, no extra `base` path is needed in Astro config.
 
